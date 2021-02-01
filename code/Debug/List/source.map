@@ -1,0 +1,47 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+digit                                                                             0x0524      10
+str                                                                               0x052E      20
+_seed                                                                             0x0542       4
+_base_y                                                                           0x0546       4
+_lcd_x                                                                            0x054A       1
+_lcd_y                                                                            0x054B       1
+_lcd_maxx                                                                         0x054C       1
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+red_timer                                                                         R4,R5        2
+green_timer                                                                       R6,R7        2
+i                                                                                 R8,R9        2
+input                                                                             R10,R11      2
+delay_time                                                                        R12,R13      2
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+green                                                                             0x000EC     14
+red                                                                               0x000FA     14
+yellow                                                                            0x00108      9
+set_lcd                                                                           0x00111     24
+pressed_key                                                                       0x00129     57
+ext_int1_isr                                                                      0x00180     75
+main                                                                              0x001CB     31
+put_buff_G101                                                                     0x001EA     64
+_print_G101                                                                       0x0022A    308
+sprintf                                                                           0x0035E     52
+_lcd_write_nibble_G102                                                            0x00392     20
+_lcd_write_data                                                                   0x003A6     13
+lcd_gotoxy                                                                        0x003B3     17
+lcd_clear                                                                         0x003C4     14
+lcd_putchar                                                                       0x003D2     32
+lcd_puts                                                                          0x003F2     15
+lcd_putsf                                                                         0x00401     19
+lcd_init                                                                          0x00414     47
+strlen                                                                            0x00443     12
+strlenf                                                                           0x0044F     13
